@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Книга рецептів</title>
+</head>
+<body>
+	<p id="UP" class="quote">Все красиве має бути їстівне!</p>
+	<p style="font-size: 20px" align="right">Сальвадор Далі</p>
+	<h1><span class="letter">R</span>ecipes</h1>
+	
+	<div id="first">
+		<div class="left"><img src="./media/apples_rot.jpg" width="70%" alt="Печені яблука" title="Печені яблука">
+			<p><a href="aboutApples.html" target="_blank">Печені яблука</a></p>
+		</div>
+		<div class="right"><img src="./media/sharlotka.jpg" width="70%" alt="Шарлотка" title="Шарлотка">
+			<p><a href="aboutSharlotka.html" target="_blank">Шарлотка</a></p>
+		</div>
+		<div class="text1">
+			<p class="words">Смачна їжа – це завжди задоволення для кожної людини. Але приготування якісної страви, яка згодом може стати шедевром – це велике мистецтво.</p>
+		</div>
+	</div>
+
+	<div id="second">
+		<div class="leftCol"><img src="./media/clafutti.jpg" width="70%" alt="Клафуті" title="Клафуті">
+			<p><a href="aboutClafuti.html" target="_blank">Клафуті</a></p>
+		</div>
+		<div class="rightCol"><img src="./media/shrimps.jpg" width="70%" alt="Смажені креветки" title="Смажені креветки">
+			<p><a href="aboutShrimps.html" target="_blank">Смажені креветки</a></p>
+		</div>
+		<div class="text2">
+			<p class="words">Геніальні рецепти створювалися роками. В наш час люди подорожують країнами, де є культ їжі, збирають оригінальні рецепти і діляться ними з суспільством. Це є запорукою популярності кулінарних блогів, Інтернет-ресурсів та різних телешоу.</p>
+		</div>
+	</div>
+
+	<div id="third">
+		<div class="leftC"><img src="./media/cherry.jpg" width="70%" alt="Віденський пиріг з вишнею" title="Віденський пиріг з вишнею">
+			<p><a href="aboutCherry.html" target="_blank">Віденський пиріг з вишнею</a></p>
+		</div>
+		<div class="rightC"><video width="500" height="300" controls="controls">
+		<source src="./media/bread001.mp4" type="video/mp4">
+		</video>
+			<p><a href="aboutBread.html" target="_blank">Білий хліб</a></p>
+		</div>
+		<div class="text3">		
+			<p class="words">Пропоную Вашій увазі Інтернет-книгу рецептів, яка, сподіваюсь, стане в нагоді кожній господині, яка любить готувати. Я зібрала рецепти найулюбленіших страв і хочу поділитися з вами. Якщо це буде цікаво, то я продовжу публікувати цікаві рецепти.</p>
+	</div>
+	</div>
+
+	<div id="table">
+	<div id="rightT">
+		<p><em>Довідка</em></p>
+		<table class="dovidka">
+		<tr class="dovidka">
+			<th class="dovidka">Назва</th>
+			<th class="dovidka">Склянка,<br>г</th>
+			<th class="dovidka">Столова ложка,<br>г</th>
+			<th class="dovidka">Чайна ложка,<br>г</th>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Борошно пшеничне</td>
+			<td class="dovidka">160</td>
+			<td class="dovidka">25</td>
+			<td class="dovidka">10</td>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Молоко</td>
+			<td class="dovidka">250</td>
+			<td class="dovidka">20</td>
+			<td class="dovidka">-</td>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Сіль</td>
+			<td class="dovidka">-</td>
+			<td class="dovidka">30</td>
+			<td class="dovidka">10</td>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Цукор</td>
+			<td class="dovidka">200</td>
+			<td class="dovidka">25</td>
+			<td class="dovidka">10</td>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Оцет</td>
+			<td class="dovidka">250</td>
+			<td class="dovidka">15</td>
+			<td class="dovidka">7</td>
+		</tr>
+		<tr class="dovidka">
+			<td class="dovidka">Крохмаль</td>
+			<td class="dovidka">200</td>
+			<td class="dovidka">30</td>
+			<td class="dovidka">15</td>
+		</tr>
+	</table>
+	</div>
+	<div id="leftM">
+	<p class="measure">Переведення сухих дріжджів в пресовані</p>
+	<p class="measure">Введіть кількість <input type="text" id="measure"> г</p>
+	<script type="text/javascript">
+		function measure(){
+			let measure = document.getElementById('measure').value;
+			let rez = measure * 2.8;
+			alert ( measure + " г сухих = " + rez.toFixed(1) + " г пресованих" );
+		} // measure
+	</script>
+	<button onclick="measure()">Перевести</button>
+	</div>
+	<div id="video">
+	<video width="500" height="360" controls="controls">
+		<source src="./media/Cake.mp4" type="video/mp4">
+	</video>
+	</div>
+	</div>
+	<p><em>Більше рецептів за посиланнями:</em></p>
+	<a href="http://belonika.ru/" target="_blank">Ника Белоцерковская</a><br>
+	<a href="https://glinskaya.com.ua/" target="_blank">Кондитерский дом Елизаветы Глинской</a><br>
+	<a href="https://andychef.ru/" target="_blank">Andy Chef (Энди Шеф) — блог о еде и путешествиях, пошаговые рецепты, интернет-магазин для кондитеров</a>
+	<p style="font-size: 20px"><em>Сайт створено за допомогою</em> <a href="https://www.ho.ua/uk/" target="_blank">ho - безкоштовний хостинг!</a></p>
+
+	<canvas id="myCanvas" width="150" height="150"></canvas>
+	<script type="text/javascript">
+		let c = document.getElementById('myCanvas');
+		let cxt = c.getContext('2d');
+		let drawRect = function drawRect( x, y, h, w, a ){
+			let dx = x + w / 2;
+			let dy = y + h / 2;
+			if ( a ){
+				a = a * ( Math.PI / 180 );
+				cxt.save();
+				cxt.translate( dx, dy );
+				cxt.rotate( a );
+				cxt.translate( -dx, -dy );
+			} // if a
+			cxt.strokeStyle = '#A52A2A';
+			cxt.strokeRect( x, y, w, h );
+			if ( a ){
+				cxt.restore();
+			} // if a
+		} // drawRect
+		let x = 40;
+		let y = 40;
+		let a = 0;
+
+		setInterval( function(){
+			cxt.clearRect( 0, 0, 150, 150 );
+			drawRect( x, y, 80, 80, a );
+			a++;
+
+			cxt.strokeStyle	= "#000000";
+		 	cxt.beginPath();
+	    	cxt.moveTo(40,120);
+	    	cxt.lineTo(70,40);
+	    	cxt.lineWidth = 2;
+	    	cxt.stroke();
+	    	cxt.fill();
+
+	    	cxt.strokeStyle	= "#000000";
+		 	cxt.beginPath();
+	    	cxt.moveTo(70,40);
+	    	cxt.lineTo(90,120);
+	    	cxt.lineWidth = 2;
+	    	cxt.stroke();
+	    	cxt.fill();
+
+	    	cxt.strokeStyle	= "#000000";
+		 	cxt.beginPath();
+	    	cxt.moveTo(90,120);
+	    	cxt.lineTo(120,40);
+	    	cxt.lineWidth = 3;
+	    	cxt.stroke();
+	    	cxt.fill();
+
+	    	cxt.strokeStyle	= "#000000";
+		 	cxt.beginPath();
+	    	cxt.moveTo(98,98);
+	    	cxt.lineTo(120,80);
+	    	cxt.lineWidth = 2;
+	    	cxt.stroke();
+	    	cxt.fill();
+
+	    	cxt.strokeStyle	= "#000000";
+		 	cxt.beginPath();
+	    	cxt.moveTo(106,91);
+	    	cxt.lineTo(120,120);
+	    	cxt.lineWidth = 2;
+	    	cxt.stroke();
+	    	cxt.fill();
+
+		}, 60 );
+	</script>
+
+	<p style="font-size: 20px"><b>E-mail:</b><a href="mailto:natali.kondratyuk@outlook.com"> natali.kondratyuk@outlook.com</a></p>
+	<img src="./media/vcss.gif" alt="W3C CSS Validator (Level 3)" title="W3C CSS Validator (Level 3)">
+	<a href="#UP"><img src="./media/cherpaki.png" width="10%" align="right" alt="Вгору" title="Вгору"></a>
+</body>
+</html>
